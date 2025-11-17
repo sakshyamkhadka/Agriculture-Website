@@ -1,0 +1,83 @@
+
+.navbar{
+height: 15vh;
+}
+
+
+.brand-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+
+.nav-link.active {
+  color:#116530 !important; 
+  
+}
+.navbar-brand  {
+  margin-left: 40px;
+
+}
+.navbar-nav{
+  margin-right: 60px !important;
+}
+
+
+
+@media (max-width: 992px) {
+  .navbar {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  .navbar-nav {
+    margin-right: 20px !important;
+  }
+
+  .brand-text {
+    font-size: 1.1rem;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    left: 0;
+    top: 100%;
+    position: relative;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  .navbar {
+    height: auto;
+    padding: 8px 0;
+    width:100vw;
+  }
+
+  .navbar-brand {
+    margin-left: 1px;
+    font-size: 1rem;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    position: static;
+    margin-top: 0;
+  }
+
+  .dropdown-item {
+    font-size: 0.9rem;
+  }
+}

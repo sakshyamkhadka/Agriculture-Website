@@ -1,0 +1,254 @@
+.farm-services-section {
+  color: white;
+  position: relative;
+  margin-top: 60px;
+  padding: 0 70px;
+  text-align: start;
+  
+}
+
+.farm-services-section::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+background-color: #000;
+width: 100%;
+height: 70%;
+
+}
+
+.farm-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 100px 0 60px;
+
+}
+
+.farm-subtitle {
+  color: #aaa;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  
+}
+
+.farm-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  
+}
+
+
+.farm-slider-wrapper {
+  position: relative;
+  margin-bottom: -40px; 
+}
+
+.farm-card {
+  position: relative;
+  height: 350px;
+
+}
+
+.farm-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.farm-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,0.7) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0; 
+  transition: opacity 0.4s ease;
+}
+
+.overlay-title {
+  color:#1a9f4b;
+  font-size: 2rem;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 1.2rem;
+  
+}
+
+
+.farm-card:hover .farm-overlay {
+  opacity: 2; 
+}
+
+.farm-card:hover .farm-image {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.custom-prev,
+.custom-next {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #000;
+}
+.custom-prev:hover,
+.custom-next:hover{
+  background-color: #116530;
+  color: white;
+
+}
+
+
+
+.custom-prev {
+  left: 20px;
+}
+
+.custom-next {
+  right: 20px;
+}
+
+
+
+
+.service-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+
+.service-indicators button {
+  width: 40px;
+  background-color: gray; 
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.service-indicators button.active {
+  background-color: #116530; 
+  width: 40px; 
+  opacity: 1;
+}
+
+.service-indicators button:hover {
+  opacity: 0.9;
+
+}
+@media (max-width: 992px) {
+  .farm-card {
+    height: 350px;
+  }
+
+  .farm-title {
+    font-size: 2rem;
+    text-align: left; 
+  }
+
+
+
+.service-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.service-indicators button {
+  width: 40px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-indicators button.active {
+  background-color: #116530;
+  width: 60px; 
+}
+
+.service-indicators button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+  .farm-card img {
+    transform: translateY(50px);
+        margin-bottom: -50px; 
+  }
+} 
+
+
+@media (max-width: 768px) {
+/* .farm-services-section {
+  height: 50%;
+} */
+  
+  .farm-card {
+    height: 320px;
+
+  }
+
+  .farm-title,
+  .farm-subtitle {
+    text-align: left;
+    margin: 0;
+  }
+
+  .farm-slider-wrapper {
+    margin-bottom: -30px;
+  }
+
+
+ .farm-services-section{
+  margin-bottom: 0;
+
+}
+
+
+  .service-indicators {
+    gap: 3px;
+    margin-top: 18px;
+  }
+
+  .service-indicators button {
+    width: 10px;
+    
+  }
+  .service-indicators button.active {
+    width: 20px; 
+  }
+    .farm-card img {
+    transform: translateY(50px);
+    margin-bottom: -50px; 
+  }
+}
+
+

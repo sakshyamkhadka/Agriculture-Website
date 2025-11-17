@@ -1,0 +1,234 @@
+.agri-container {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  color: #2d465e;
+}
+
+.agri-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.agri-main-content {
+  flex: 0 0 62%; 
+  max-width: 62%;
+  margin-left: 40px; 
+}
+
+
+.agri-article-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  margin-left: 40px;
+}
+
+.agri-image-wrapper {
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
+
+.agri-featured-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.agri-article-body {
+  margin-left: 40px;
+}
+.agri-article-body p {
+  font-size: 1.12rem;
+  line-height: 1.85;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.agri-subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 35px 0 20px;
+}
+
+.agri-blockquote {
+  border-left: 4px solid #116530;
+  background: #f6f6ff;
+  padding: 18px 25px;
+  border-radius: 8px;
+  font-style: italic;
+  margin: 30px 0;
+  color: #444;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.agri-tags {
+  margin-top: 20px;
+}
+
+.agri-tag-item {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #ececff;
+  color: #116530;
+  border-radius: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: .3s ease;
+}
+
+.agri-tag-item i {
+  margin-right: 4px;
+}
+
+.agri-tag-item:hover {
+  background: #116530;
+  color: #fff;
+}
+
+.agri-sidebar {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding-left: 30px;
+}
+
+/* AUTHOR BOX */
+.agri-author-box {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.06);
+  margin-bottom: 25px;
+}
+
+.agri-author-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #116530;
+  object-fit:cover ;
+}
+
+.agri-author-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: block;
+}
+
+.agri-author-date {
+  color: #777;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.agri-social-icons a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #116530;
+  transition: 0.3s ease;
+}
+
+.agri-social-icons a:hover {
+  color: #2d465e;
+}
+
+.agri-categories-box, .agri-recent-box, .agri-tags-box {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.06);
+  margin-bottom: 25px;
+}
+
+.agri-categories-title, .agri-recent-title, .agri-tags-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2d465e;
+}
+
+.agri-categories-list, .agri-recent-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.agri-categories-list li, .agri-recent-list li {
+  margin-bottom: 12px;
+}
+
+.agri-categories-list a, .agri-recent-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: .25s ease;
+}
+
+.agri-categories-list a i, .agri-recent-list a i {
+  margin-right: 6px;
+  color: #888;
+}
+
+.agri-categories-list a:hover, .agri-recent-list a:hover {
+  color: #116530;
+}
+
+.agri-tag-items .agri-tag-item {
+  display: inline-block;
+  background: #f0f0ff;
+  color: #116530;
+  margin: 6px;
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.agri-tag-items .agri-tag-item i {
+  margin-right: 4px;
+}
+
+.agri-tag-items .agri-tag-item:hover {
+  background: #116530;
+  color: #fff;
+}
+
+
+@media (max-width: 992px) {
+  .agri-sidebar {
+    padding-left: 0;
+    margin-top: 40px;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .agri-main-content {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .agri-article-title {
+    font-size: 2rem;
+  }
+
+  .agri-article-body p {
+    font-size: 1.05rem;
+  }
+
+  .agri-author-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .agri-author-name {
+    font-size: 1.1rem;
+  }
+}

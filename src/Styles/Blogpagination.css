@@ -1,0 +1,83 @@
+.blogpagination {
+  padding: 40px 0;
+}
+
+.blogpagination ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.blogpagination ul li {
+  display: inline-block;
+}
+
+.blogpagination ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.blogpagination ul li a:hover {
+  background-color: #116530;
+  color: #fff;
+}
+
+.blogpagination ul li a.active {
+  background-color: #116530;
+  color: #fff;
+}
+
+.blogpagination ul li {
+  font-size: 16px;
+}
+
+.blogpagination i {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+
+
+@media (max-width: 992px) {
+  .blogpagination {
+    padding: 30px 0;
+  }
+
+  .blogpagination ul {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blogpagination ul li a {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blogpagination {
+    padding: 25px 0;
+  }
+
+  .blogpagination ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .blogpagination ul li a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .blogpagination i {
+    font-size: 14px;
+  }
+}
