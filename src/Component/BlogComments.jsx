@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/BlogComment.css";
+import "../Styles/Blogcomment.css";
 
 const BlogComments = () => {
   const comments = [
